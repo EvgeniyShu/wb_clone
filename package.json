@@ -1,0 +1,37 @@
+{
+  "name": "wildberries_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Evgeniy Shulezhko",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-structurize": "^2.4.4",
+    "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "parcel-plugin-structurize": {
+    "rules": [
+      {
+        "match": "*.{ttf,woff2}",
+        "folder": "fonts"
+      },
+      {
+        "match": "*.{css,map.css}",
+        "folder": "css"
+      },
+      {
+        "match": "*.{png,svg,jpg,jpg2,jpeg,webp,bmp,webm}",
+        "folder": "images"
+      }
+    ]
+  }
+}

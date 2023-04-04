@@ -1,0 +1,42 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(119, 64, 115, 0.5);
+  display: none;
+  transition: 0.5s all;
+}
+
+.popup__bg.active {
+  display: block;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #ffffff;
+  width: 80vw;
+  height: 80vh;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.8s all;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.8s all;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=/popup.70a3719c.css.map */
