@@ -1,0 +1,77 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(119, 64, 115, 0.5);
+  display: none;
+  transition: 0.5s all;
+}
+
+.popup__bg.active {
+  display: block;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #ffffff;
+  width: 80vw;
+  height: 80vh;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.8s all;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.8s all;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.cart_wrap {
+  margin-top: 20px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.goods_wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup_wrap {
+  margin: 10px;
+  width: 90%;
+  height: 90%;
+}
+
+.image-popup {
+  max-width: 90%;
+  max-height: 75%;
+}
+
+/*# sourceMappingURL=/\css\popup.84eb1f96.css.map */

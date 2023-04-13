@@ -5,3 +5,18 @@
     font-weight: 400;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Circular',sans-serif;
+    src: url('../fonts/WorkSans-Light.woff2') format('woff2'),url('../fonts/WorkSans-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 450;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Circular';
+    src:url('../fonts/WorkSans-Medium.woff2') format('woff2'), url('../fonts/WorkSans-Medium.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}

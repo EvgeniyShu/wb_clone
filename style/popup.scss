@@ -37,3 +37,40 @@
     right: 20px;
     cursor: pointer;
 }
+
+
+
+.cart_wrap{
+    margin-top: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.goods_wrap{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+.popup_wrap{
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.image-popup{
+    max-width: 90%;
+    max-height: 75%;
+}
