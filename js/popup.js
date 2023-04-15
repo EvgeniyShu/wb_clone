@@ -1,6 +1,7 @@
 import { popup, promise, clickOnCartButton} from "./index.js";
 import { shoppingCartArr} from "./index.js";
 import {createHtmlElement} from './helper.js'
+import imgarr from '../images/*.jpg'
 
 export function createShopingCart(popup, arr){
     const header = createHtmlElement('h2', 'Корзина', 'h2');
@@ -73,7 +74,7 @@ export function createShopingCart(popup, arr){
 
 
 export function cardInPopup(popup, id){
-     promise(id).then(({name, price, image, id})=> createPopupText(name, price, image, id, popup))
+     promise(id).then(({name, price, image, id})=> createPopupText(name, price, imgarr[id], id, popup))
 
      function createPopupText(name, price, image, id, parrent){
         const popupWrap = createHtmlElement('div', '', 'popup_wrap');

@@ -2,8 +2,9 @@ import {createHtmlElement, createCardTable} from './helper.js'
 import {createShopingCart, cardInPopup} from './popup.js'
 import {slider, init} from './slider.js'
 import {aside} from './aside.js'
+import imgarr from '../images/*.jpg'
 const root = document.getElementById('root');
-
+console.log(imgarr)
 const header = createHtmlElement('header', '', 'header');
 const radius = createHtmlElement('div', '', 'radius');
 const main = createHtmlElement('main', '', 'main');
@@ -87,7 +88,7 @@ export const createCard = async (parent) => {
   
   const id = Math.floor((Math.random() * 37) + 1);
 
-  await promise(id).then(({name, price, image, id})=> createText(name, price, image, id, card))
+  await promise(id).then(({name, price, image, id})=> createText(name, price, imgarr[id], id, card))
 
   //namediv.innerText = name;
   parent.append(card);
@@ -117,6 +118,7 @@ export function clickOnCartButton(event){
   let image = document.getElementById(`${id}img`).currentSrc
   let name = document.getElementById(`${id}n`).textContent
   let price = document.getElementById(`${id}pr`).textContent
+  console.dir(image)
   shoppingCartArr.push({id:id,image: image, name: name, price: price})
     localStorage.setItem('shopingCart', JSON.stringify(shoppingCartArr))
   }

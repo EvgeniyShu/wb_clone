@@ -1,5 +1,6 @@
 
 import {createHtmlElement} from './helper.js'
+import sliderarr from '../images/slider/*.jpg'
 
  export const slider = createHtmlElement('div', '', 'slider')
     const sliderLine = createHtmlElement('div', '', 'slider-line')
@@ -15,9 +16,9 @@ import {createHtmlElement} from './helper.js'
     
     link1.classList.add('active');
 
-    bunnerImg1.src = 'https://loremflickr.com/640/480/abstract';
-    bunnerImg2.src = 'https://loremflickr.com/640/480/city'
-    bunnerImg3.src = 'https://loremflickr.com/640/480/technics'
+    bunnerImg1.src = sliderarr[3];
+    bunnerImg2.src = sliderarr[2]
+    bunnerImg3.src = sliderarr[1]
 
     slider.append(sliderLine, sliderPrev, sliderNext, linkWrap)
     sliderLine.append(bunnerImg1, bunnerImg2, bunnerImg3)
